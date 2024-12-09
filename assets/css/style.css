@@ -6398,7 +6398,7 @@ ol.wp-block-rss {
 
 .breadcumb-wrapper {
   background-color: var(--smoke-color2);
-  padding: 150px 0 150px 0;
+  padding: 175px 0 175px 0;
   overflow: hidden;
   text-align: center;
 }
@@ -6406,7 +6406,7 @@ ol.wp-block-rss {
 /* Medium Large devices */
 @media (max-width: 1399px) {
   .breadcumb-wrapper {
-    padding: 120px 0 120px 0;
+    padding: 150px 0 150px 0;
   }
 }
 
@@ -13885,6 +13885,7 @@ span.select2-selection.select2-selection--single:focus {
 /*------------------- 4.00. Faq -------------------*/
 /* Faq 1 ---------------------------------- */
 .accordion-card {
+  width: 50%;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   border-radius: 20px;
@@ -15354,6 +15355,7 @@ span.select2-selection.select2-selection--single:focus {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
+  max-height: 700px;
 }
 
 @media (max-width: 1199px) {
@@ -15377,6 +15379,10 @@ span.select2-selection.select2-selection--single:focus {
   .cta-sec5 {
     padding: var(--section-space-mobile) 40px;
   }
+  
+  .accordion-card{
+    width: 100%;
+  }
 }
 
 @media (max-width: 575px) {
@@ -15388,6 +15394,7 @@ span.select2-selection.select2-selection--single:focus {
 .cta-sec5 .sec-title {
   max-width: 500px;
 }
+
 
 /*------------------- 4.00. Price -------------------*/
 /* Price Card -----------------------------------*/
