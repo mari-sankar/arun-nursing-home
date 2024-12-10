@@ -5182,6 +5182,21 @@ ol.wp-block-rss {
   margin: 0 20px;
 }
 
+.header-logo {
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+}
+
+.header-logo a img {
+  max-width: 100%; /* Ensure image fits within its container */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: auto; /* Add spacing on top */
+  margin-bottom: auto; /* Add spacing on bottom */
+  margin-left: 10px;
+}
+
 .header-button .icon-btn .badge {
   font-size: 12px;
   top: 0;
@@ -5383,7 +5398,7 @@ ol.wp-block-rss {
 .header-layout1 .header-logo .logo-bg {
   position: absolute;
   top: 0;
-  right: -26px;
+  right: 50px;
   height: 100%;
   width: 2000px;
   background-size: auto;
