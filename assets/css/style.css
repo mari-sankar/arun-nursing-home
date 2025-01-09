@@ -3294,10 +3294,6 @@ a.text-theme:hover,
   }
 }
 
-/*=================================
-    04. Template Style
-==================================*/
-/*------------------- 4.1. Widget  -------------------*/
 .widget_nav_menu ul,
 .widget_meta ul,
 .widget_pages ul,
@@ -4931,6 +4927,10 @@ ol.wp-block-rss {
 
 .main-menu > ul > li > a:hover {
   color: var(--theme-color);
+}
+
+.main-menu > ul > li > .active:hover {
+  color: var(--title-color);
 }
 
 .main-menu ul {
@@ -8663,6 +8663,17 @@ ul.comment-list:has(> .th-comment-item ~ .th-comment-item):first-child > .th-pos
   border-radius: 0;
   font-weight: 500;
   font-size: 14px;
+}
+
+.th-mobile-menu ul li .active {
+  color: #04CE78;
+}
+
+nav ul li .active{
+  color: #fff;
+  background-color: #04CE78;
+  padding: 8px 12px;
+  border-radius: 5px;
 }
 
 nav.woocommerce-MyAccount-navigation li {
