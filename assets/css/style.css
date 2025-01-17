@@ -6172,6 +6172,10 @@ ol.wp-block-rss {
   margin-bottom: 4px;
 }
 
+.gap{
+  margin-left: 15px;
+}
+
 .info-box {
   display: -webkit-box;
   display: -webkit-flex;
