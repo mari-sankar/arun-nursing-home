@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Our Team</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background-color: #6c63ff;
+  color: white;
+  padding: 2rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0 0;
+}
+
+/* Team Section */
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.team-member {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1.5rem;
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 4px solid #6c63ff;
+}
+
+.team-member h3 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.team-member p {
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  background-color: #6c63ff;
+  transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #554cd5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meet Our Team</h1>
+    <p>Get to know the people who make our hospital exceptional.</p>
+  </header>
+  <main class="team-container">
+    <div class="team-member">
+      <img src="member1.jpg" alt="Dr. John Doe">
+      <h3>Dr. John Doe</h3>
+      <p>Chief Surgeon</p>
+      <div class="social-links">
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+      </div>
+    </div>
+    <div class="team-member">
+      <img src="member2.jpg" alt="Dr. Sarah Smith">
+      <h3>Dr. Sarah Smith</h3>
+      <p>Cardiologist</p>
+      <div class="social-links">
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+      </div>
+    </div>
+    <div class="team-member">
+      <img src="member3.jpg" alt="Dr. Emily Johnson">
+      <h3>Dr. Emily Johnson</h3>
+      <p>Neurologist</p>
+      <div class="social-links">
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
