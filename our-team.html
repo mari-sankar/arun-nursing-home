@@ -1,141 +1,349 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="zxx">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meet Our Team</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    /* General Styles */
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
-  color: #333;
-}
-
-header {
-  text-align: center;
-  background-color: #6c63ff;
-  color: white;
-  padding: 2rem;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-}
-
-header p {
-  font-size: 1.2rem;
-  margin: 0.5rem 0 0;
-}
-
-/* Team Section */
-.team-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
-}
-
-.team-member {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  padding: 1.5rem;
-  width: 250px;
-  transition: transform 0.3s ease;
-}
-
-.team-member:hover {
-  transform: translateY(-10px);
-}
-
-.team-member img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 1rem;
-  border: 4px solid #6c63ff;
-}
-
-.team-member h3 {
-  font-size: 1.5rem;
-  margin: 0.5rem 0;
-}
-
-.team-member p {
-  color: #666;
-  margin: 0.5rem 0;
-}
-
-.social-links a {
-  display: inline-block;
-  margin: 0 5px;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  text-decoration: none;
-  color: white;
-  background-color: #6c63ff;
-  transition: background-color 0.3s ease;
-}
-
-.social-links a:hover {
-  background-color: #554cd5;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .team-container {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-  </style>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Arun Nursing Home</title>
+    <meta name="author" content="Arun Nursing Home">
+    <meta name="description" content="Arun Nursing Home Hospital Website">
+    <meta name="keywords" content="Arun Nursing Home Hospital Website">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/anh-logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/anh-logo.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/anh-logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/anh-logo.png">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- All CSS File -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Fontawesome Icon -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!-- Swiper Js -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- datetimepicker -->
+    <link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css">
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Meet Our Team</h1>
-    <p>Get to know the people who make our hospital exceptional.</p>
-  </header>
-  <main class="team-container">
-    <div class="team-member">
-      <img src="member1.jpg" alt="Dr. John Doe">
-      <h3>Dr. John Doe</h3>
-      <p>Chief Surgeon</p>
-      <div class="social-links">
-        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-        <a href="https://twitter.com" target="_blank">Twitter</a>
-        <a href="https://facebook.com" target="_blank">Facebook</a>
-      </div>
+    
+    <!-- Sidemenu -->
+    <div class="sidemenu-wrapper sidemenu-info ">
+        <div class="sidemenu-content">
+            <button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
+            <div class="widget  ">
+                <div class="th-widget-about">
+                    <div class="about-logo">
+                        <a href="index.html"><img src="assets/img/logo.png" alt="Arun Nursing Home"></a>
+                    </div>
+                    <!-- <p class="about-text">Subscribe to out newsletter today to receive latest news administrate cost effective for tactical data.</p> -->
+                    <p class="footer-info">
+                        <i class="fal fa-location-dot"></i>
+                        No. 131, V.O.C Street,<br> Tirunelveli Town - 627006
+                    </p>
+                    <p class="footer-info">
+                        <i class="fal fa-envelope"></i>
+                        <a href="mailto:arunnursinghomespp@gmail.com" class="info-box_link">arunnursinghomespp@gmail.com</a>
+                    </p>
+                    <p class="footer-info">
+                        <i class="fal fa-phone"></i>
+                        <a href="tel:04622322722" class="info-box_link">(0462) 23 22 722</a>
+                    </p>
+                    <div class="th-social">
+                        <a href="https://linkedin.com/company/arun-nursing-home/company/arun-nursing-home/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="team-member">
-      <img src="member2.jpg" alt="Dr. Sarah Smith">
-      <h3>Dr. Sarah Smith</h3>
-      <p>Cardiologist</p>
-      <div class="social-links">
-        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-        <a href="https://twitter.com" target="_blank">Twitter</a>
-        <a href="https://facebook.com" target="_blank">Facebook</a>
-      </div>
+    <!-- Mobile Menu -->
+    <div class="th-menu-wrapper">
+        <div class="th-menu-area text-center">
+            <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo">
+                <a href="index.html"><p class="cor">Arun Nursing Home</p>
+            </div>
+            <div class="th-mobile-menu">
+                <a href=""></a>
+                <ul>
+                    <li>
+                        <a href="index.html" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="">Service</a>
+                    </li>
+                    <li>
+                        <a href="">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="team-member">
-      <img src="member3.jpg" alt="Dr. Emily Johnson">
-      <h3>Dr. Emily Johnson</h3>
-      <p>Neurologist</p>
-      <div class="social-links">
-        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-        <a href="https://twitter.com" target="_blank">Twitter</a>
-        <a href="https://facebook.com" target="_blank">Facebook</a>
+    <!-- Header Area -->
+    <header class="th-header header-layout1">
+        <div class="header-top">
+            <div class="container">
+                <div class="row justify-content-center justify-content-lg-between align-items-center gy-2">
+                    <div class="col-auto d-none d-lg-block">
+                        <div class="header-links">
+                            <ul>
+                                <li class="d-none d-sm-inline-block"><i class="fas fa-phone icon-btn"></i><b>Phone:</b><a href="tel:04622322722">(0462) 23 22 722</a></li>
+                                <li class="d-none d-sm-inline-block"><i class="fas fa-envelope icon-btn"></i><b>Email:</b><a href="mailto:arunnursinghomespp@gmail.com">arunnursinghomespp@gmail.com</a></li>
+                                <li class="d-none d-xxl-inline-block"><a href="https://maps.app.goo.gl/DFoPPy7QhSe97Nxc8"><i class="fas fa-location-dot icon-btn" ></i>No. 131, V.O.C Street, Tirunelveli Town - 627006</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="header-links">
+                            <ul>
+                                <li>
+                                    <div class="social-links">
+                                        <span class="social-title">Follow Us On: </span>
+                                        <a href="https://linkedin.com/company/arun-nursing-home/company/arun-nursing-home/"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sticky-wrapper">
+            <!-- Main Menu Area -->
+            <div class="menu-area">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-auto">
+                            <div class="header-logo">
+                                <div class="logo-bg" data-bg-src="assets/img/bg/logo_bg_1.png"></div>
+                                <a href="index.html"><img src="assets/img/logo.png" alt="Arun Nursing Home"></a>
+                            </div>
+                        </div>
+                        <div class="col-auto d-none d-lg-inline-block">
+                            <nav class="main-menu d-none d-lg-inline-block">
+                                <ul>
+                                    <li>
+                                        <a href="index.html" class="active">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Service</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-auto">
+                            <div class="header-button">
+                                <button type="button" class="icon-btn sideMenuInfo d-none d-xl-inline-block"><i class="far fa-bars"></i></button>
+                                <button type="button" class="th-menu-toggle d-block d-lg-none"><i class="far fa-bars"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-top-center" id="team-sec" data-bg-src="assets/img/bg/team_bg_1.jpg">
+      <div class="container z-index-common space">
+          <div class="title-area text-center">
+              <h2 class="sec-title">Meet our Team</h2>
+          </div>
+          <div class="swiper th-slider has-shadow" id="teamSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4"}}}'>
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <div class="th-team team-card">
+                          <div class="box-img">
+                              <img src="assets/img/normal/packiamparvathy.png" alt="Team">
+                              <div class="th-social">
+                                  <a target="_blank" href="https://linkedin.com/company/arun-nursing-home/"><i class="fab fa-linkedin-in"></i></a>
+                              </div>
+                          </div>
+                          <h3 class="box-title"><a href="">Dr. Packiam Parvathy</a></h3>
+                          <span class="team-desig">Gynecologists</span>
+                      </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                      <div class="th-team team-card">
+                          <div class="box-img">
+                              <img src="assets/img/normal/swarnakamala.png" alt="Team">
+                              <div class="th-social">
+                                  <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                  <a target="_blank" href="https://linkedin.com/company/arun-nursing-home/"><i class="fab fa-linkedin-in"></i></a>
+                                  <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                              </div>
+                          </div>
+                          <h3 class="box-title"><a href="">Dr. Swarna Kamala</a></h3>
+                          <span class="team-desig">Gynecologists</span>
+                      </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                      <div class="th-team team-card">
+                          <div class="box-img">
+                              <img src="assets/img/team/team_1_4.jpg" alt="Team">
+                              <div class="th-social">
+                                  <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                  <a target="_blank" href="https://linkedin.com/company/arun-nursing-home/"><i class="fab fa-linkedin-in"></i></a>
+                                  <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                              </div>
+                          </div>
+                          <h3 class="box-title"><a href="">Sundaralingam RA</a></h3>
+                          <span class="team-desig">Administration</span>
+                      </div>
+                  </div>
+
+                  <!-- <div class="swiper-slide">
+                      <div class="th-team team-card">
+                          <div class="box-img">
+                              <img src="assets/img/team/team_1_4.jpg" alt="Team">
+                              <div class="th-social">
+                                  <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                  <a target="_blank" href="https://linkedin.com/company/arun-nursing-home/"><i class="fab fa-linkedin-in"></i></a>
+                                  <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                              </div>
+                          </div>
+                          <h3 class="box-title"><a href="">Dr. </a></h3>
+                          <span class="team-desig"></span>
+                      </div>
+                  </div> -->
+
+              </div>
+          </div>
       </div>
+  </section>
+
+  <footer class="footer-wrapper footer-layout1" data-bg-src="assets/img/bg/footer_bg_1.jpg">
+    <div class="widget-area">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 col-xl-auto">
+                    <div class="widget footer-widget">
+                        <div class="th-widget-about">
+                            <div class="about-logo">
+                                <a href="index.html"><img src="assets/img/logo.png" alt="Arun Nursing Home"></a>
+                            </div>
+                            <p class="footer-info">
+                                <i class="fal fa-location-dot"></i>
+                                No. 131, V.O.C Street,<br>Tirunelveli Town - 627006
+                            </p>
+                            <p class="footer-info">
+                                <i class="fal fa-envelope"></i>
+                                <a href="mailto:arunnursinghomespp@gmail.com" class="info-box_link">arunnursinghomespp@gmail.com</a>
+                            </p>
+                            <p class="footer-info">
+                                <i class="fal fa-phone"></i>
+                                <a href="tel:04622322722" class="info-box_link">(0462) 23 22 722</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-auto dis">
+                    <div class="widget widget_nav_menu footer-widget">
+                        <h3 class="widget_title">Quick Links</h3>
+                        <div class="menu-all-pages-container">
+                            <ul class="menu">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="#">Terms of Use</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Help & FAQs</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Privacy policy</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-auto dis">
+                    <div class="widget widget_nav_menu footer-widget">
+                        <h3 class="widget_title">Popular service</h3>
+                        <div class="menu-all-pages-container">
+                            <ul class="menu">
+                                <li><a href="#">Gynecology</a></li>
+                                <li><a href="#">Pediatrics</a></li>
+                                <li><a href="#">Orthopedic</a></li>
+                                <li><a href="#">Urology</a></li>
+                                <li><a href="#">Neurology</a></li>
+                                <li><a href="#">General Medicine</a></li>
+                                <li><a href="#">General Surgery</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </div>
-  </main>
-  <script src="script.js"></script>
+    <div class="copyright-wrap">
+        <div class="container">
+            <div class="row gy-2 align-items-center">
+                <div class="col-md-7">
+                    <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2024 <a href="index.html">Arun Nursing Home</a>. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-5 text-center text-md-end dis">
+                    <div class="th-social">
+                        <a href="https://linkedin.com/company/arun-nursing-home/company/arun-nursing-home/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+  <div class="scroll-top">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
+      </svg>
+  </div>
+
+  <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <script src="assets/js/jquery.datetimepicker.min.js"></script>
+  <script src="assets/js/jquery-ui.min.js"></script>
+  <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/js/isotope.pkgd.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
 </body>
 </html>
