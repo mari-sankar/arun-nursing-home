@@ -2039,6 +2039,10 @@ textarea.is-invalid {
   text-transform: none !important;
 }
 
+.dropdown .dropdown-menus li a.activ{
+  color: #04fb90;
+}
+
 /* Show dropdown on hover (Desktop) */
 @media (min-width: 768px) {
   .dropdown:hover .dropdown-menus {
@@ -2054,6 +2058,10 @@ textarea.is-invalid {
       width: 100%;
       box-shadow: none;
       border: none;
+  }
+
+  .dropdown-menus li a .active{
+    color: #04fb90;
   }
 
   .dropdown-menus li {
