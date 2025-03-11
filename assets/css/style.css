@@ -3414,6 +3414,13 @@ a.text-theme:hover,
   border-left: 5px solid var(--theme-color2);
 }
 
+.widget_categories a.active{
+  background-color: #EAEEFA;
+  color: var(--theme-color2);
+  box-shadow: none;
+  border-left: 5px solid var(--theme-color2);
+}
+
 .widget_nav_menu .sub-menu,
 .widget_nav_menu .children,
 .widget_meta .sub-menu,
