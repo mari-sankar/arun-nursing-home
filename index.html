@@ -889,41 +889,6 @@
             window.addEventListener("resize", updateHeroBackground);
         });
 
-        document.addEventListener("DOMContentLoaded", function () {
-    const dropdowns = document.querySelectorAll(".dropdown");
-
-    // Function to toggle dropdown on mobile click
-    function handleClick(event) {
-        if (window.innerWidth < 768) {
-            event.preventDefault();
-            const clickedDropdown = event.currentTarget;
-            clickedDropdown.classList.toggle("active");
-
-            const dropdownMenu = clickedDropdown.querySelector(".dropdown-menus");
-            if (clickedDropdown.classList.contains("active")) {
-                dropdownMenu.style.display = "block";
-            } else {
-                dropdownMenu.style.display = "none";
-            }
-        }
-    }
-
-    // Add event listener to each dropdown
-    dropdowns.forEach((dropdown) => {
-        dropdown.addEventListener("click", handleClick);
-    });
-
-    // Hide dropdown when clicking outside (mobile mode)
-    document.addEventListener("click", function (event) {
-        dropdowns.forEach((dropdown) => {
-            if (!dropdown.contains(event.target) && window.innerWidth < 768) {
-                dropdown.classList.remove("active");
-                dropdown.querySelector(".dropdown-menus").style.display = "none";
-            }
-        });
-    });
-});
-
     </script>
     
 </body>
