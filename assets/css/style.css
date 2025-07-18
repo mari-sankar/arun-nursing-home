@@ -540,6 +540,13 @@ h6 {
   margin-top: var(--bs-gutter-y);
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
 @media (min-width: 1300px) {
   .row {
     --bs-gutter-x: 24px;
