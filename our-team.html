@@ -19,6 +19,71 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .stars i {
+            color: #ffcc00;
+            margin: 0 2px;
+            font-size: 1.1rem;
+        }
+
+        .th-testimonial-card {
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .th-testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .sec-text {
+            font-size: 16px;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 992px) {
+            .sec-text {
+                font-size: 15px;
+                max-width: 90%;
+            }
+            
+            .th-testimonial-card {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sec-title {
+                font-size: 1.6rem;
+            }
+            .sec-text {
+                font-size: 14px;
+            }
+            .th-testimonial-card {
+                margin: 0 10px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .sec-title {
+                font-size: 1.4rem;
+            }
+            .sec-text {
+                font-size: 13.5px;
+            }
+            .th-testimonial-card {
+                padding: 1.2rem;
+            }
+            .stars i {
+                font-size: 1rem;
+            }
+            .swiper-pagination {
+                margin-top: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -220,13 +285,75 @@
                         <div class="box-img">
                             <img src="assets/img/normal/sundaraligam.png" alt="Sundaralingam RA">
                         </div>
-                        <h3 class="box-title">Sundaralingam RA</h3>
-                        <span class="team-desig">Administration</span>
+                        <h3 class="box-title">Sundaralingam R A</h3>
+                        <span class="team-desig">Director</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="space bg-light">
+        <div class="container text-center">
+        <div class="title-area">
+            <h2 class="sec-title">What Our Patients Say</h2>
+            <p class="sec-text">
+                Real experiences from those who trusted Arun Nursing Home for their care and recovery.
+            </p>
+        </div>
+
+    
+        <div class="swiper testimonial-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="th-testimonial-card p-4 shadow rounded-3 bg-white">
+                        <div class="stars mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="mb-3">“The doctors were very kind and attentive throughout my treatment. I felt completely cared for and safe.”</p>
+                        <h5 class="mb-0">- Priya M.</h5>
+                        <small class="text-muted">Tirunelveli</small>
                     </div>
                 </div>
 
+                <div class="swiper-slide">
+                    <div class="th-testimonial-card p-4 shadow rounded-3 bg-white">
+                        <div class="stars mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="mb-3">“Excellent service! The staff are so professional and polite. Highly recommend Arun Nursing Home for maternity care.”</p>
+                        <h5 class="mb-0">- Karthik R.</h5>
+                        <small class="text-muted">Madurai</small>
+                    </div>
+                </div>
 
+        
+                <div class="swiper-slide">
+                    <div class="th-testimonial-card p-4 shadow rounded-3 bg-white">
+                        <div class="stars mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p class="mb-3">“Modern facilities and quick response during emergencies. I appreciate their care and dedication.”</p>
+                        <h5 class="mb-0">- Divya S.</h5>
+                        <small class="text-muted">Tirunelveli</small>
+                    </div>
+                </div>
             </div>
+
+            <div class="swiper-pagination mt-4"></div>
+        </div>
         </div>
     </section>
 
@@ -240,7 +367,6 @@
                                 <div class="about-logo">
                                     <a href="index.html"><img src="assets/img/logo.png" alt="Arun Nursing Home"></a>
                                 </div>
-                                <!-- <p class="about-text">Subscribe to out newsletter today to receive latest news administrate cost effective for tactical data.</p> -->
                                 <p class="footer-info">
                                     <i class="fal fa-location-dot"></i>
                                     No. 131, V.O.C Street,<br>Tirunelveli Town - 627006
@@ -264,7 +390,7 @@
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="about.html">About Us</a></li>
                                     <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="our-doctor.html">Our Team</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -289,7 +415,6 @@
                 </div>
             </div>
         </div>
-        
         <div class="copyright-wrap">
             <div class="container">
                 <div class="row gy-2 align-items-center">
@@ -298,8 +423,6 @@
                     </div>
                     <div class="col-md-5 text-center text-md-end dis">
                         <div class="th-social">
-                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
                             <a href="https://linkedin.com/company/arun-nursing-home/company/arun-nursing-home/"><i class="fab fa-linkedin-in"></i></a>
                             <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
                         </div>
@@ -324,6 +447,22 @@
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="assets/js/isotope.pkgd.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        var testimonialSlider = new Swiper(".testimonial-slider", {
+            loop: true,
+            autoplay: { delay: 4000, disableOnInteraction: false },
+            pagination: { el: ".swiper-pagination", clickable: true },
+            slidesPerView: 1,
+            spaceBetween: 20,
+            breakpoints: {
+                576: { slidesPerView: 1 },
+                768: { slidesPerView: 2, spaceBetween: 25 },
+                1200: { slidesPerView: 3, spaceBetween: 30 }
+            }
+        });
+    </script>
+
+
 
 </body>
 </html>
